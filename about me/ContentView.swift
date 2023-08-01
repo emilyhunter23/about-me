@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("ABOUT EM !")
+                .font(.largeTitle)
+                .fontWeight(.light)
+            Image("cute puppy")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 3)
+            Text("emily charlotte hunter is a 14-year-old girl who lives in north london. she loves music, reading, and baking. she hopes to pursue a career in medicine.")
+                .font(.body)
+                .multilineTextAlignment(.center)
+            
         }
-        .padding()
     }
 }
 
